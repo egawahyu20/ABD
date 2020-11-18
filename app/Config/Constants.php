@@ -77,16 +77,16 @@ defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 
-if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
-     (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
-     (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
-    $protocole = 'https://';
-} else {
-    $protocole = 'http://';
-}
+// if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+//      (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+//      (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+//     $protocole = 'https://';
+// } else {
+//     $protocole = 'http://';
+// }
 
-$host = $_SERVER['HTTP_HOST'] . '/';
-$project = explode('/', $_SERVER['REQUEST_URI']);
-$baseurl = $protocole . $host . $project[1];
-$myappBaseUrl = $baseurl.'/';
-defined('BASESEURL') || define('BASESEURL',$myappBaseUrl);
+// $host = $_SERVER['HTTP_HOST'] . '/';
+// $project = explode('/', $_SERVER['REQUEST_URI']);
+// $baseurl = $protocole . $host . $project[1];
+// $myappBaseUrl = $baseurl.'/';
+// defined('BASESEURL') || define('BASESEURL',$myappBaseUrl);
