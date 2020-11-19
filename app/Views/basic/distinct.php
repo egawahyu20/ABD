@@ -18,7 +18,7 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Number</th>
@@ -26,7 +26,6 @@
                                             <th>Last Name</th>
                                             <th>Email</th>
                                             <th>Job</th>
-                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -36,7 +35,6 @@
                                             <th>Last Name</th>
                                             <th>Email</th>
                                             <th>Job</th>
-                                            <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -47,10 +45,6 @@
                                                 <td><?= $row->lastName;?></td>
                                                 <td><?= $row->email;?></td>
                                                 <td><?= $row->jobTitle;?></td>
-                                                <td>
-                                                    <a href="#" class="btn btn-info btn-sm btn-edit">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm btn-delete">Delete</a>
-                                                </td>
                                             </tr>
                                         <?php endforeach;?>
                                     </tbody>

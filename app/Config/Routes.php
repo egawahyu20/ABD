@@ -31,18 +31,18 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/basic/where', 'Home::where');
-$routes->get('/basic/distinct', 'Home::distinct');
-$routes->get('/basic/operator', 'Home::operator');
-$routes->get('/basic/between', 'Home::between');
-$routes->get('/basic/like', 'Home::like');
-$routes->get('/basic/limit', 'Home::limit');
-$routes->get('/basic/is-null', 'Home::isNull');
-$routes->get('/lanjutan/alias', 'Home::alias');
-$routes->get('/lanjutan/join', 'Home::join');
-$routes->get('/lanjutan/group-by', 'Home::groupBy');
-$routes->get('/lanjutan/having', 'Home::having');
-$routes->get('/lanjutan/roll-up', 'Home::rollUp');
+$routes->get('/basic/where', 'Basic::where');
+$routes->get('/basic/distinct', 'Basic::distinct');
+$routes->get('/basic/operator', 'Basic::operator');
+$routes->get('/basic/between', 'Basic::between');
+$routes->get('/basic/like', 'Basic::like');
+$routes->get('/basic/limit', 'Basic::limit');
+$routes->get('/basic/is-null', 'Basic::isNull');
+$routes->get('/lanjutan/alias', 'Lanjutan::alias');
+$routes->get('/lanjutan/join', 'Lanjutan::join');
+$routes->get('/lanjutan/group-by', 'Lanjutan::groupBy');
+$routes->get('/lanjutan/having', 'Lanjutan::having');
+$routes->get('/lanjutan/roll-up', 'Lanjutan::rollUp');
 
 /**
  * --------------------------------------------------------------------
